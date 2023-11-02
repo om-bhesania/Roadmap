@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+
+/* 
+body {
+    background: #acacac !important;;
+} */
+
+.square-btn {
+    width: 65px;
+    height: 65px;
+    border-radius: 20% !important;
+}
+
+.card {
+    border: none !important;
+}
+
+.top {
+    margin-top: 100px;
+}
+
+.top50 {
+    margin-top: 55px;
+}
+
+.topMax {
+    margin-top: 150px;
+}
+
+.gap {
+    gap: 15px
+}
+
+.gap-main {
+    gap: 30px;
+}
+
+section {
+    background-color: white;
+}
+
+.seperator {
+    height: 3em;
+    width: 100%;
+    background-color: #d5d5d5;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.275);
+}
+
+.image {
+    height: 22.188rem !important;
+    width: 25.625rem !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-containe {
+    z-index: 0;
+    position: relative;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.overlay {
+    background-color: rgba(173, 168, 168, 0.184);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 100;
+}
+
+.overlay-text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    text-align: center;
+    display: flex;
+    align-items:end;
+    justify-content: space-evenly;
+}
+
+.overlay-img {
+    height: 30px;
+}
+.overlay-card-text{
+    color: white;
+    display: flex;
+    gap: 10px;
+
+}
+.text-overlay{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50px , 50px);
+    text-align: center;
+    z-index: 200;
+}
+.overlay-card-text{
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 10px;
+}
+.earth{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 10px;
+    color: white;
+}
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    </head>
+
+    <body>
+        <header>
+
+            <nav class="sidebar" id="sidebar">
+                <div class="nav_link">
+                    <ul>
+                        <img src="/assets/img/signature.png" alt="">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Meet Chef MATT</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact with us</a></li>
+                    </ul>
+                </div>
+                <div class="cartArea">
+                    <h5>Tech Support 24/7 <a href="#">1234567980</a></h5>
+                    <hr id="hr" style="height: 3px;background-color:white;width:100%;">
+                    <div class="cart">
+                        <div class="cart-item">
+                            <button><img src="/assets/img/cart.svg" alt=""></button>
+                            <span style="color:white">Cart</span>
+                        </div>
+                        <div class="wishlist">
+                            <button> <img src="/assets/img/waitlist.svg" alt=""></button>
+                            <span style="color:white">Wishlist</span>
+                        </div>
+                    </div>
+            </nav>
+            <div class="signature" id="signature">
+                <img src="/assets/img/signature.png" alt="">
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+        </header>
+        <main>
+            <section class="hero">
+                <div class="bg">
+                    <img src="/assets/img/slider-bg.jpeg" alt="">
+                </div>
+                <button class="cta">Meet Chef Matt</button>
+            </section>
+
+            <section class="service">
+                <div class="leaf">
+                    <img src="/assets/img/leaf.png" alt="">
+                
+                </div>
+
+                <div class="container">
+                    <div class="heading">
+                        <h1>CHEF MATT PRODUCTS</h1>
+                        <div class="sepe"></div>
+                        <h3>Shop Gourmet Chef Quality products from the Chef Matt brand.
+                            Chef it yourself and Thank us later.</h3>
+                        </div>
+                </div>
+
+                <div class="prod-cont">
+                    <div class="carousel">
+                        <div class="price">
+                            <img src="/assets/img/prod2.svg" alt="Product 1">
+                            <h3>CNNAMON HONEY</h3>
+                            <p><span>$20.00</span>$09.00</p>
+                        </div>
+                        <div class="price">
+                            <img src="/assets/img/prod3.svg" alt="Product 2">
+                            <h3>TEST</h3>
+                            <p><span>$09.00</span>$15.00</p>
+                        </div>
+                        <div class="price">
+                            <img src="/assets/img/prod4.svg" alt="Product 3">
+                            <h3>TEST</h3>
+                            <p><span>$12.00</span>$9.00</p>
+                        </div>
+                        <div class="price">
+                            <img src="/assets/img/prod5.svg" alt="Product 4">
+                            <h3>TEST</h3>
+                            <p><span>$12.00</span>$9.00</p>
+                        </div>
+                        <div class="price">
+                            <img src="/assets/img/prod5.svg" alt="Product 5">
+                            <h3>TEST</h3>
+                            <p><span>$12.00</span>$9.00</p>
+                        </div>
+                    </div>
+                    <div class="arrows">
+                        <button id="prevBtn" class="carousel-button">
+                            << </button>
+                                <button id="nextBtn" class="carousel-button">>></button>
+                    </div>
+                </div>
+            </section>
+        
+
+        </main>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script>
+            function toggleMenu() {
+                var sidebar = document.getElementById("sidebar");
+                sidebar.classList.toggle("sidebar-open");
+                var signature = document.getElementById("signature");
+
+                if (sidebar.classList.contains("sidebar-open")) {
+                    signature.style.opacity = "0"; // Hide the signature when the sidebar is active
+                } else {
+                    signature.style.opacity = "1"; // Display the signature when the sidebar is hidden
+                }
+            }
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('.carousel').slick({
+                    slidesToShow: 4, // Number of visible slides at a time
+                    slidesToScroll: 1, // Number of slides to scroll
+                    infinite: true, // Infinite loop
+                    prevArrow: $('#prevBtn'),
+                    nextArrow: $('#nextBtn')
+                });
+            });
+        </script>
+    </body>
+
+</html>
