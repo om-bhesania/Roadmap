@@ -1,0 +1,279 @@
+@use "_colors"as colors;
+@use "_sizes"as size;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+$primaryFont:'Inter',
+sans-serif;
+
+header {
+    max-width: 92%;
+    margin: auto;
+    padding: 20px;
+
+    >nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        >.logo {
+            >ul {
+                color: colors.$black;
+                font-size: size.$logo;
+                font-weight: 600;
+
+                >a {
+                    color: colors.$black;
+                    text-decoration: none;
+                    font-weight: 600;
+                    letter-spacing: 0.3rem;
+                }
+            }
+        }
+
+        >.links {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+
+            gap: 3rem;
+
+            >.nav_links {
+                font-family: $primaryFont;
+                color: colors.$green;
+                font-size: size.$navLinks;
+
+                >a {
+                    text-decoration: none;
+                    color: colors.$green;
+                    font-weight: 600;
+
+                    :visited {
+                        color: colors.$green;
+                    }
+                }
+            }
+
+            .active {
+                >a {
+                    font-family: $primaryFont;
+                    color: colors.$black;
+                }
+            }
+
+            >.quoteBtn {
+                >button {
+                    background-color: colors.$lightBlue;
+                    color: colors.$white;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    border: none;
+                    font-family: $primaryFont;
+                    font-weight: 500;
+                    font-size: size.$navLinks;
+                    text-decoration: none;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        background-color: colors.$DarkerlightBlue;
+                        color: colors.$white;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+main {
+    .service-hero {
+        height: 25vw;
+        width: 100%;
+        background-image: url(../img/Backgroud-slide.png);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: -5;
+
+        .service-hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            h1 {
+                font-size: 3em;
+                font-weight: 700;
+            }
+
+            p {
+                width: 40%;
+                text-align: center;
+                color: colors.$green;
+                font-size: large;
+                font-weight: 500;
+            }
+        }
+    }
+
+
+
+    .teamGrid {
+        height: 100vh;
+        width: 80%;
+        margin: -5% auto;
+        padding: 20px;
+        z-index: 2;
+        border: 1px solid black;
+
+        .card-body {
+            height: 20em;
+            width: 16em;
+            border-radius: 10px;
+            border: 1px solid black;
+
+        }
+    }
+
+
+
+
+}
+
+footer {
+    margin-top: 100px;
+    height: 25vw;
+    width: 100%;
+    background-image: url(../img/Backgroud-slide.png);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    li {
+        font-weight: 600;
+        font-size: 1.2em;
+        color: #83ffea;
+    }
+
+    .textFooter {
+        width: 82%;
+        margin: 100px auto;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+
+    }
+
+    .leftLogoSec {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+        gap: 30px;
+
+        h3 {
+            font-weight: 700;
+            font-size: 1.6em;
+        }
+
+        p {
+            font-size: 1.2em;
+            font-weight: 600;
+            width: 82%;
+        }
+    }
+
+    .workFooter {
+        h4 {
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .servicesFooter {
+        h4 {
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .businessFooter {
+        h4 {
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .rightsec {
+        width: 82%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .languageFooter {
+        label {
+            h4 {
+                font-weight: 600;
+            }
+        }
+
+        select {
+            background: transparent;
+            border: none;
+        }
+    }
+
+    .bottomFooter {
+        width: 82%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.3em;
+        font-weight: 600;
+
+        .bottomFooterRight {
+            color: colors.$black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            font-weight: 700;
+            font-size: 0.688;
+
+            a {
+                color: colors.$black;
+                text-decoration: none;
+            }
+        }
+    }
+
+    hr {
+        width: 82%;
+        color: colors.$black;
+        ;
+        margin: auto;
+        border-top: 3px solid colors.$white;
+    }
+}

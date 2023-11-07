@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+header {
+  max-width: 92%;
+  margin: auto;
+  padding: 20px;
+}
+header > nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header > nav > .logo > ul {
+  color: #292525;
+  font-size: 2rem;
+  font-weight: 600;
+}
+header > nav > .logo > ul > a {
+  color: #292525;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+header > nav > .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 3rem;
+}
+header > nav > .links > .nav_links {
+  font-family: "Inter", sans-serif;
+  color: #60e1cb;
+  font-size: 1.15rem;
+}
+header > nav > .links > .nav_links > a {
+  text-decoration: none;
+  color: #60e1cb;
+  font-weight: 600;
+}
+header > nav > .links > .nav_links > a :visited {
+  color: #60e1cb;
+}
+header > nav > .links .active > a {
+  font-family: "Inter", sans-serif;
+  color: #292525;
+}
+header > nav > .links > .quoteBtn > button {
+  background-color: #6299b5;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+header > nav > .links > .quoteBtn > button:hover {
+  background-color: #7bc0e3;
+  color: #ffffff;
+}
+
+main .service-hero {
+  height: 25vw;
+  width: 100%;
+  background-image: url(../img/Backgroud-slide.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -5;
+}
+main .service-hero .service-hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .service-hero .service-hero-content h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+main .service-hero .service-hero-content p {
+  width: 40%;
+  text-align: center;
+  color: #60e1cb;
+  font-size: large;
+  font-weight: 500;
+}
+main .teamGrid {
+  height: 100vh;
+  width: 80%;
+  margin: -5% auto;
+  padding: 20px;
+  z-index: 2;
+  border: 1px solid black;
+}
+main .teamGrid .card-body {
+  height: 20em;
+  width: 16em;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+footer {
+  margin-top: 100px;
+  height: 25vw;
+  width: 100%;
+  background-image: url(../img/Backgroud-slide.png);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer li {
+  font-weight: 600;
+  font-size: 1.2em;
+  color: #83ffea;
+}
+footer .textFooter {
+  width: 82%;
+  margin: 100px auto;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+footer .leftLogoSec {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  gap: 30px;
+}
+footer .leftLogoSec h3 {
+  font-weight: 700;
+  font-size: 1.6em;
+}
+footer .leftLogoSec p {
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 82%;
+}
+footer .workFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .workFooter h4 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+footer .servicesFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .servicesFooter h4 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+footer .businessFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .businessFooter h4 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+footer .rightsec {
+  width: 82%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .languageFooter label h4 {
+  font-weight: 600;
+}
+footer .languageFooter select {
+  background: transparent;
+  border: none;
+}
+footer .bottomFooter {
+  width: 82%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+footer .bottomFooter .bottomFooterRight {
+  color: #292525;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 700;
+  font-size: 0.688;
+}
+footer .bottomFooter .bottomFooterRight a {
+  color: #292525;
+  text-decoration: none;
+}
+footer hr {
+  width: 82%;
+  color: #292525;
+  margin: auto;
+  border-top: 3px solid #ffffff;
+}/*# sourceMappingURL=team.css.map */
