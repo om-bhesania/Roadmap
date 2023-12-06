@@ -89,18 +89,59 @@ main .service-hero .service-hero-content p {
   font-weight: 500;
 }
 main .teamGrid {
-  height: 100vh;
   width: 80%;
   margin: -5% auto;
   padding: 20px;
   z-index: 2;
-  border: 1px solid black;
 }
-main .teamGrid .card-body {
-  height: 20em;
-  width: 16em;
+main .teamGrid .cardcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  row-gap: 15px;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+main .teamGrid .cardcontainer .card-body {
+  height: 25em;
+  width: 18em;
   border-radius: 10px;
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+main .teamGrid .cardcontainer .card-body button {
+  background-color: #60e1cb;
+  border: none;
+  border-radius: 50px;
+  padding: 5px;
+  width: 10em;
+  color: white;
+}
+main .teamGrid .cardcontainer .card-body .avatar {
+  height: 3em;
+  width: 3em;
+  background-color: #e9fbf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 10px;
+}
+main .teamGrid .cardcontainer .card-body p {
+  color: #60e1cb;
+}
+main .teamGrid .cardcontainer .card-body h4 {
+  font-weight: 700;
+}
+main .teamGrid .cardcontainer .card-body img {
+  height: 10em;
+  border-radius: 50%;
 }
 
 footer {

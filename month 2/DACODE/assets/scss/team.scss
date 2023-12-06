@@ -120,22 +120,65 @@ main {
 
 
     .teamGrid {
-        height: 100vh;
         width: 80%;
         margin: -5% auto;
         padding: 20px;
         z-index: 2;
-        border: 1px solid black;
+        .cardcontainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5%;
+            row-gap: 15px;
+            margin: 20px;
+            flex-wrap: wrap;
 
-        .card-body {
-            height: 20em;
-            width: 16em;
-            border-radius: 10px;
-            border: 1px solid black;
+            .card-body {
+                height: 25em;
+                width: 18em;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2%;
+                background-color: white;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                button {
+                    background-color: colors.$green;
+                    border: none;
+                    border-radius: 50px;
+                    padding: 5px;
+                    width: 10em;
+                    color: white;
+                }
 
+                .avatar {
+                    height: 3em;
+                    width: 3em;
+                    background-color: colors.$greenLight;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    padding: 10px;
+                }
+
+                p {
+                    color: colors.$green;
+                }
+
+                h4 {
+                    font-weight: 700;
+                }
+
+                img {
+                    height: 10em;
+                    border-radius: 50%;
+                }
+            }
         }
     }
-
 
 
 
