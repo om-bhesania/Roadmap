@@ -4,259 +4,239 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
-            integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
-            integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
-            integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./style.css">
         <title>Document</title>
+        <link rel="stylesheet" href="./assets/style.css">
+
+        <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+            href="/css/app-wa-02670e9412103b5852dcbe140d278c49.css?vsn=d">
+
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
+
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css">
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPMS41FJD2"></script>
     </head>
 
     <body>
+
         <header id="header">
             <nav>
-                <div class="logo">
-                    <a href="#">
-                        <h2><i class="fa-solid fa-camera"></i> Album</h2>
-                    </a>
-                </div>
+                <ul>
+                    <div class="albumLogo">
+                        <i class="fa-regular fa-camera" style="font-size: 1.3em;"></i>
+                        <span>Album</span>
+                    </div>
+                </ul>
                 <div class="hamburger">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
                 </div>
             </nav>
-
         </header>
         <main>
-            <div class="hero">
-                <h1>Album example</h1>
-                <p>Something short and leading about the collection below—its contents, the creator, etc. Make it short
-                    and
-                    sweet, but not too short so don’t simply skip over it entirely.</p>
-                <div id="cta">
-                    <button class="cta-main">Main Call to action</button>
-                    <button class="cta-sec">Secondary action</button>
-                </div>
-            </div>
-            <div class="album">
-                <div class="card">
-                    <div class="card-image">
-                        Thumbnail
+            <section class="hero">
+                <div class="heroDesc">
+                    <div class="heroText">
+                        <h1>Album example</h1>
+                        <p>Something short and leading about the collection below—its contents, the creator, etc. Make
+                            it
+                            short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
                     </div>
-                    <div class="card-text">
-                        <div class="para">
-                            This is a wider card with supporting text below as a natural lead-in to additional content.
-                            This content is a little bit longer.
-                        </div>
-                        <div class="btns">
-                            <div class="cardBtn">
-                                <div class="btnBox left">
-                                    <button class="btn-left">View</button>
-                                </div>
-                                <div class="btnBox right">
-                                    <button class="btn-right">Edit</button>
-                                </div>
-                            </div>
-                            <p> 9 mins</p>
-                        </div>
+                    <div class="ctaButtons">
+                        <button class="mainCta">Main Call to action</button>
+                        <button class="SecondaryCta">Secondary action</button>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-image">
-                        Thumbnail
+            </section>
+            <section class="grid">
+                <div class="cardBody">
+                    <div class="imgShape">Thumbnail</div>
+                    <div class="text">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional
+                            content.
+                            This content is a little bit longer.</p>
                     </div>
-                    <div class="card-text">
-                        <div class="para">
-                            This is a wider card with supporting text below as a natural lead-in to additional content.
-                            This content is a little bit longer.
+
+                    <div class="cardFooter">
+                        <div class="actionBtns">
+                            <button class="viewAb">View</button>
+                            <button class="editAb">Edit</button>
                         </div>
-                        <div class="btns">
-                            <div class="cardBtn">
-                                <div class="btnBox left">
-                                    <button class="btn-left">View</button>
-                                </div>
-                                <div class="btnBox right">
-                                    <button class="btn-right">Edit</button>
-                                </div>
-                            </div>
-                            <p> 9 mins</p>
+                        <div class="date">
+                            <p>9 mins</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-image">
-                        Thumbnail
+                <div class="cardBody">
+                    <div class="imgShape">Thumbnail</div>
+                    <div class="text">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional
+                            content.
+                            This content is a little bit longer.</p>
                     </div>
-                    <div class="card-text">
-                        <div class="para">
-                            This is a wider card with supporting text below as a natural lead-in to additional content.
-                            This content is a little bit longer.
+
+                    <div class="cardFooter">
+                        <div class="actionBtns">
+                            <button class="viewAb">View</button>
+                            <button class="editAb">Edit</button>
                         </div>
-                        <div class="btns">
-                            <div class="cardBtn">
-                                <div class="btnBox left">
-                                    <button class="btn-left">View</button>
-                                </div>
-                                <div class="btnBox right">
-                                    <button class="btn-right">Edit</button>
-                                </div>
-                            </div>
-                            <p> 9 mins</p>
+                        <div class="date">
+                            <p>9 mins</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-image">
-                        Thumbnail
+                <div class="cardBody">
+                    <div class="imgShape">Thumbnail</div>
+                    <div class="text">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional
+                            content.
+                            This content is a little bit longer.</p>
                     </div>
-                    <div class="card-text">
-                        <div class="para">
-                            This is a wider card with supporting text below as a natural lead-in to additional content.
-                            This content is a little bit longer.
+
+                    <div class="cardFooter">
+                        <div class="actionBtns">
+                            <button class="viewAb">View</button>
+                            <button class="editAb">Edit</button>
                         </div>
-                        <div class="btns">
-                            <div class="cardBtn">
-                                <div class="btnBox left">
-                                    <button class="btn-left">View</button>
-                                </div>
-                                <div class="btnBox right">
-                                    <button class="btn-right">Edit</button>
-                                </div>
-                            </div>
-                            <p> 9 mins</p>
+                        <div class="date">
+                            <p>9 mins</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-image">
-                        Thumbnail
+                <div class="cardBody">
+                    <div class="imgShape">Thumbnail</div>
+                    <div class="text">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional
+                            content.
+                            This content is a little bit longer.</p>
                     </div>
-                    <div class="card-text">
-                        <div class="para">
-                            This is a wider card with supporting text below as a natural lead-in to additional content.
-                            This content is a little bit longer.
+
+                    <div class="cardFooter">
+                        <div class="actionBtns">
+                            <button class="viewAb">View</button>
+                            <button class="editAb">Edit</button>
                         </div>
-                        <div class="btns">
-                            <div class="cardBtn">
-                                <div class="btnBox left">
-                                    <button class="btn-left">View</button>
-                                </div>
-                                <div class="btnBox right">
-                                    <button class="btn-right">Edit</button>
-                                </div>
-                            </div>
-                            <p> 9 mins</p>
+                        <div class="date">
+                            <p>9 mins</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-image">
-                        Thumbnail
+                <div class="cardBody">
+                    <div class="imgShape">Thumbnail</div>
+                    <div class="text">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional
+                            content.
+                            This content is a little bit longer.</p>
                     </div>
-                    <div class="card-text">
-                        <div class="para">
-                            This is a wider card with supporting text below as a natural lead-in to additional content.
-                            This content is a little bit longer.
+
+                    <div class="cardFooter">
+                        <div class="actionBtns">
+                            <button class="viewAb">View</button>
+                            <button class="editAb">Edit</button>
                         </div>
-                        <div class="btns">
-                            <div class="cardBtn">
-                                <div class="btnBox left">
-                                    <button class="btn-left">View</button>
-                                </div>
-                                <div class="btnBox right">
-                                    <button class="btn-right">Edit</button>
-                                </div>
-                            </div>
-                            <p> 9 mins</p>
+                        <div class="date">
+                            <p>9 mins</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-image">
-                        Thumbnail
+                <div class="cardBody">
+                    <div class="imgShape">Thumbnail</div>
+                    <div class="text">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional
+                            content.
+                            This content is a little bit longer.</p>
                     </div>
-                    <div class="card-text">
-                        <div class="para">
-                            This is a wider card with supporting text below as a natural lead-in to additional content.
-                            This content is a little bit longer.
+
+                    <div class="cardFooter">
+                        <div class="actionBtns">
+                            <button class="viewAb">View</button>
+                            <button class="editAb">Edit</button>
                         </div>
-                        <div class="btns">
-                            <div class="cardBtn">
-                                <div class="btnBox left">
-                                    <button class="btn-left">View</button>
-                                </div>
-                                <div class="btnBox right">
-                                    <button class="btn-right">Edit</button>
-                                </div>
-                            </div>
-                            <p> 9 mins</p>
+                        <div class="date">
+                            <p>9 mins</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-image">
-                        Thumbnail
+                <div class="cardBody">
+                    <div class="imgShape">Thumbnail</div>
+                    <div class="text">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional
+                            content.
+                            This content is a little bit longer.</p>
                     </div>
-                    <div class="card-text">
-                        <div class="para">
-                            This is a wider card with supporting text below as a natural lead-in to additional content.
-                            This content is a little bit longer.
+
+                    <div class="cardFooter">
+                        <div class="actionBtns">
+                            <button class="viewAb">View</button>
+                            <button class="editAb">Edit</button>
                         </div>
-                        <div class="btns">
-                            <div class="cardBtn">
-                                <div class="btnBox left">
-                                    <button class="btn-left">View</button>
-                                </div>
-                                <div class="btnBox right">
-                                    <button class="btn-right">Edit</button>
-                                </div>
-                            </div>
-                            <p> 9 mins</p>
+                        <div class="date">
+                            <p>9 mins</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-image">
-                        Thumbnail
+                <div class="cardBody">
+                    <div class="imgShape">Thumbnail</div>
+                    <div class="text">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional
+                            content.
+                            This content is a little bit longer.</p>
                     </div>
-                    <div class="card-text">
-                        <div class="para">
-                            This is a wider card with supporting text below as a natural lead-in to additional content.
-                            This content is a little bit longer.
+
+                    <div class="cardFooter">
+                        <div class="actionBtns">
+                            <button class="viewAb">View</button>
+                            <button class="editAb">Edit</button>
                         </div>
-                        <div class="btns">
-                            <div class="cardBtn">
-                                <div class="btnBox left">
-                                    <button class="btn-left">View</button>
-                                </div>
-                                <div class="btnBox right">
-                                    <button class="btn-right">Edit</button>
-                                </div>
-                            </div>
-                            <p> 9 mins</p>
+                        <div class="date">
+                            <p>9 mins</p>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="cardBody">
+                    <div class="imgShape">Thumbnail</div>
+                    <div class="text">
+                        <p>This is a wider card with supporting text below as a natural lead-in to additional
+                            content.
+                            This content is a little bit longer.</p>
+                    </div>
+
+                    <div class="cardFooter">
+                        <div class="actionBtns">
+                            <button class="viewAb">View</button>
+                            <button class="editAb">Edit</button>
+                        </div>
+                        <div class="date">
+                            <p>9 mins</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
         </main>
         <footer>
-            <div class="textFooter">
-                <p>Album example is © Bootstrap, but please download and customize it for yourself!
-                 New to Bootstrap? <a href="#header">Visit the homepage</a> or read our <a href="#header">getting started guide.</a></p>
-            </div>
-            <div class="back2top">
-                <a href="#header">back to top</a>
+            <div class="containerFooter">
+                <div class="subContainer">
+                    <div class="footerText">
+                        <p>Album example is © Bootstrap, but please download and customize it for yourself!.</p>
+                        <p>
+
+                            New to Bootstrap? <a href="#header">Visit the homepage</a> or read our <a href="#header">getting started guide</a></p>
+                    </div>
+                    <div class="backToTop">
+                        <a href="#header">Back to top</a>
+                    </div>
+                </div>
             </div>
         </footer>
+
     </body>
 
 </html>

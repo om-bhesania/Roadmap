@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+$primary:#7b7554;
+$secondary:#eac435;
+$black:#1d1d1d;
+$helper:#28262c;
+$accent:#aef6c7;
+$white:#fff;
+$primaryFont:'Vollkorn',
+serif;
+$secondaryFont:'DM Serif Display',
+serif;
+$border:1px solid #000;
+$borderRadius:10px;
+$boxShadow:0 0 10px rgba(0, 0, 0, 0.5);
+$transition: 0.25s ease-in-out;
+$hover:scale(1.01);
+$hoverColor:#000;
+$hoverBg:#fff;
+$hoverBorder:1px solid #000;
+$hoverBoxShadow:0 0 10px rgba(0, 0, 0, 0.5);
+$hoverTransition:all 0.3s ease-in-out;
+$active:scale(0.99);
+$activeColor:#000;
+$activeBg:#fff;
+$activeBorder:1px solid #000;
+$activeBoxShadow:0 0 10px rgba(0, 0, 0, 0.5);
+$activeTransition:all 0.3s ease-in-out;
+$disabled:scale(1);
+$disabledColor:#000;
+$disabledBg:#fff;
+$disabledBorder:1px solid #000;
+$disabledBoxShadow:0 0 10px rgba(0, 0, 0, 0.5);
+$disabledTransition:all 0.3s ease-in-out;
+$focus:scale(1.01);
+$focusColor:#000;
+$focusBg:#fff;
+$focusBorder:1px solid #000;
+$focusBoxShadow:0 0 10px rgba(0, 0, 0, 0.5);
+$focusTransition:all 0.3s ease-in-out;
+$fontColor:#000;
+$fontSizeHeading:2em;
+$fontSizePara:1.04em;
+$fontSizeXs:0.6em;
+$fontSizeXl:3em;
+$lineHeight:1;
+$letterSpacing:0.5px;
+
+// Breakpoints
+// $small-screen: 576px;
+// $medium-screen: 768px;
+// $large-screen: 992px;
+// $extra-large-screen: 1200px;
+
+$breakpoints: (
+  xs: "(max-width: 575.98px)",
+  sm: "(min-width: 576px) and (max-width: 767.98px)",
+  md: "(min-width: 768px) and (max-width: 991.98px)",
+  lg: "(min-width: 992px) and (max-width: 1199.98px)",
+  xl: "(min-width: 1200px) and (max-width: 1399.98px)",
+  xxl: "(min-width: 1400px)",
+);
+
+@mixin breakpoint($user-value) {
+  $my-map: map-get($breakpoints, $user-value);
+  @if $my-map {
+    @media #{$my-map} {
+      @content;
+    }
+  }
+  @else {
+    @error "Breakpoint '#{$user-value}' does not exist in $breakpoints";
+  }
+}

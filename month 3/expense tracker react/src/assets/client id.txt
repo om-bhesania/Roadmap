@@ -1,0 +1,4 @@
+cleint id
+810729418117-vt0tcqooviufg6lnpujltql80n0p3304.apps.googleusercontent.com
+client secret
+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

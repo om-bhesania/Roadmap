@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+:root {
+    --headerNavCol: #212529;
+    --primaryFont: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --primaryFontColor: #212529;
+    --secondaryFontColor: #6c757d;
+    --primaryFontSize: 40px;
+    --primaryLineHeight: 48px;
+    --bodyBg: #f8f9fa;
+}
+
+body,
+html {
+    background-color: var(--bodyBg);
+    font-family: var(--primaryFont);
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 3.5em;
+    background-color: var(--headerNavCol);
+    color: #fff;
+}
+
+nav {
+    height: 100%;
+    width: 68%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+nav ul .albumLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+nav ul span {
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.hamburger {
+    height: 75%;
+    width: 3.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 6px;
+    gap: 0.4em;
+    border: 1px solid #383b3f;
+}
+
+
+
+.hamburger span {
+    height: 0.12em;
+    width: 1.5em;
+    background-color: #9b9d9e;
+    border-radius: 10px;
+}
+
+
+.hero {
+    width: 100%;
+    margin: auto;
+    height: 26rem;
+    background-color: #fff;
+
+}
+
+.heroDesc {
+    width: 68%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+    color: var(--primaryFontColor);
+}
+
+.heroText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heroText p {
+    width: 50%;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: #6c757d;
+    font-family: var(--primaryFont);
+}
+
+.heroText h1 {
+    width: 51%;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #212529;
+    font-family: var(--primaryFont);
+    margin-bottom: 0.3em;
+}
+
+.ctaButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    gap: 1%;
+    width: 50%;
+    height: auto;
+}
+
+.mainCta {
+    width: 10em;
+    height: 2.5em;
+    font-weight: 400;
+    font-size: 0.9em;
+    color: white;
+    background-color: #136efd;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--primaryFont);
+}
+
+.SecondaryCta {
+    width: 10em;
+    height: 2.5em;
+    font-weight: 400;
+    font-size: 0.9em;
+    color: white;
+    background-color: var(--secondaryFontColor);
+    border: none;
+    font-family: var(--primaryFont);
+    border-radius: 4px;
+}
+
+.grid {
+    height: 100%;
+    width: 68%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 3.3rem;
+}
+
+.cardBody {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 78%;
+    width: 32.5%;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    background-color: white;
+}
+
+.imgShape {
+    border-radius: 4px 4px 0 0;
+    height: 24vh;
+    width: 100%;
+    background-color: #55595c;
+    display: flex;
+    align-items: center;
+    border: none;
+    justify-content: center;
+    color: white;
+    font-size: large;
+    font-family: var(--primaryFont);
+}
+
+.text {
+    height: 20%;
+    margin-top: 10px;
+    width: 98%;
+    padding: 10px;
+    font-family: var(--primaryFont);
+    line-height: 24px;
+    font-weight: 400;
+    font-weight: 400;
+    color: #525252;
+   
+}
+
+.cardFooter {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.actionBtns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.viewAb {
+    padding: 7px;
+    border-top: 1px solid #9b9d9e;
+    border-left: 1px solid #9b9d9e;
+    border-bottom: 1px solid #9b9d9e;
+    border-right: none;
+    background-color: transparent;
+    color: #55595c;
+    transition: ease-in-out 0.3s;
+    border-radius: 4px 0 0 4px;
+
+}
+
+.viewAb:hover {
+    background-color: #747474;
+    color: white;
+    cursor: pointer;
+}
+.editAb:hover {
+    background-color: #747474;
+    color: white;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.editAb {
+    padding: 7px;
+    border: 1px solid #707070;
+    border-radius: 0 4px 4px 0;
+    background-color: transparent;
+}
+
+.date p {
+    font-size: 0.9em;
+    color: #707070;
+    font-family: var(--primaryFont);
+    font-weight: 400;
+}
+
+footer {
+    margin-top: 3.5em;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.containerFooter {
+    width: 68%;
+    margin: auto;
+}
+.footerText{
+    font-size: 0.97em;
+    line-height: 2;
+    color: #707070;
+    font-family: var(--primaryFont);
+    font-weight: 400;
+
+}
+.footerText a{
+    color: #136efd;
+}
+.subContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}

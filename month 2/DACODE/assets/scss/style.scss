@@ -10,11 +10,6 @@ sans-serif;
     box-sizing: border-box;
 }
 
-body,
-html {
-    font-family: $primaryFont;
-}
-
 header {
     max-width: 92%;
     margin: auto;
@@ -98,8 +93,6 @@ header {
 }
 
 main {
-    position: relative;
-
     >.hero {
         display: flex;
         justify-content: space-around;
@@ -197,7 +190,7 @@ main {
             padding: 20px;
 
             >img {
-                height: 45rem;
+                height: 30rem;
 
             }
         }
@@ -273,533 +266,69 @@ main {
     }
 
 
-    >.portfolio {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background-color: white;
-        position: relative;
-        z-index: 20;
-
-        >.heading {
-            margin-top: 100px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-
-            >h1 {
-                font-size: size.$headingXXL;
-                font-family: $primaryFont;
-                font-weight: 800;
-            }
-
-            >p {
-                text-align: center;
-                font-size: size.$para;
-                width: 60%;
-                font-family: $primaryFont;
-                font-weight: 700;
-                color: colors.$lightBlue;
-            }
-
-            >.subNav {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 20px;
-                margin-top: 50px;
-                list-style: none;
-
-                >li {
-                    >a {
-                        font-size: x-large;
-                        text-decoration: none;
-                        color: colors.$lightBlue;
-                        padding: 15px;
-                        border-radius: 50px;
-                        transition: 0.4s ease;
-
-                        &:hover {
-                            border: 1px solid colors.$lightBlue;
-                            border-radius: 50px;
-                        }
-
-                        .active-subnav {
-                            border: 1px solid colors.$lightBlue;
-                            border-radius: 50px;
-                        }
-                    }
-                }
-
-
-            }
-        }
-
-        >.carousel-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 92%;
-            margin: auto;
-            position: relative;
-            z-index: 12;
-
-            >.carousel {
-                height: auto;
-                width: 88%;
-                margin: 100px auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                overflow: hidden;
-
-                >.slides {
-                    max-width: 90%;
-                    gap: 4%;
-                    display: flex;
-                    transition: transform 0.3s ease;
-
-                    >.slide {
-                        flex: 0 0 33.33%;
-                        transition: transform 0.5s ease;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                        gap: 10px;
-
-                        >p {
-                            width: 100%;
-                            text-align: left;
-                            font-size: large;
-                            font-weight: 600;
-                        }
-
-                        >img {
-                            display: block;
-                            width: 100%;
-                            max-height: 25rem;
-                            transition: transform 0.3s ease;
-                            border-radius: 20px;
-                        }
-                    }
-                }
-            }
-
-        }
-
-        >.bg2 {
-            position: absolute;
-            height: 40%;
-            width: 100%;
-            top: 35em;
-            left: 0;
-            z-index: -1;
-            background-color: colors.$green;
-        }
-
-        >.seeall {
-            position: relative;
-            top: 10px;
-            border: 1px solid #3b3b3b;
-            border-radius: 50px;
-            height: 4em;
-            width: 10em;
-            background-color: colors.$black;
-            color: white;
-            font-weight: 600;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-        }
-    }
-
-    >.idea {
-        height: auto;
-        width: 82%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        // align-items: center;
-        // justify-content: center;
-        gap: 15%;
-
-        >.heading {
-            width: 40%;
-            margin-left: 100px;
-            margin-top: 100px;
-            margin-bottom: 50px;
-            display: flex;
-            flex-direction: column;
-            align-items: baseline;
-            justify-content: center;
-            gap: 10px;
-
-            >h1 {
-                font-weight: 600;
-
-                >span {
-                    color: colors.$green;
-                }
-            }
-
-            >p {
-                font-size: large;
-                font-weight: 600;
-            }
-        }
-
-        >.idea-card-container {
-            width: 82%;
-            margin: auto;
-
-            >.idea-card {
-                display: flex;
-                align-items: flex-start;
-                justify-content: baseline;
-                gap: 20px;
-            }
-
-            .idea-number {
-
-                height: 1.5em;
-                width: 1.5em;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 2.5rem;
-                font-weight: 600;
-                color: colors.$green;
-                margin-right: 20px;
-                border-radius: 10em;
-                box-shadow: rgba(0, 0, 0, 0.127) 0px 10px 5px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 0px, rgba(0, 0, 0, 0.17) 0px 12px 3px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-            }
-
-            .idea-text {
-                width: 50%;
-
-                h1 {
-                    color: colors.$green;
-                }
-
-                h6 {
-                    font-size: large;
-                    font-weight: 600;
-                }
-
-            }
-        }
-
-
-
-
-
-
-
-
-
-    }
-
-    .work {
-        margin-top: 100px;
-        height: 50vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        flex-direction: column;
-        z-index: 0;
-
-        >img {
-            z-index: -10;
-            height: 30em;
-            width: 100%;
-            background-color: colors.$green;
-        }
-
-        >.extras {
-            position: absolute;
-            z-index: 20;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 20px;
-
-            h1 {
-                color: colors.$black;
-                font-weight: 800;
-                font-size: 3em;
-            }
-
-            p {
-                color: colors.$black;
-                font-weight: 600;
-                font-size: 1.5em;
-            }
-
-            button {
-                background-color: colors.$black;
-                color: white;
-                padding: 20px;
-                width: 15em;
-                border-radius: 50px;
-                border: none;
-                font-weight: 700;
-                box-shadow: rgba(0, 0, 0, 0.127) 0px 10px 50px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 10px, rgba(0, 0, 0, 0.17) 0px 12px 3px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-            }
-        }
-
-    }
-
-    .ideaimg {
-
-        width: 100%;
-        height: 40%;
-        margin: auto;
-
-        .idea-bgImg {
-            img {
-                position: absolute;
-                top: 95%;
-                left: 60vw;
-                height: 35em;
-            }
-
-        }
-    }
-
-    .testimonial {
-        .heading {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 0;
-            margin-top: 100px;
-
-            p {
-                color: colors.$lightBlue;
-                font-weight: 600;
-                font-size: 1.5em;
-            }
-
-            h1 {
-                color: colors.$black;
-                font-weight: 600;
-            }
-        }
-
-        .testimonial-slider {
-            position: relative;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            transition: transform 0.5s ease; // Add transition for smooth sliding
-
-            .testimonial {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                padding: 20px;
-                background-color: #f4f4f4;
-                border-radius: 10px;
-                margin: 10px;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-                width: 100%; // Adjust width to fit your design
-            }
-        }
-
-        .prev-button,
-        .next-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 24px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            z-index: 2; // Make sure buttons are on top of testimonials
-        }
-
-        .prev-button {
-            left: 10px;
-        }
-
-        .next-button {
-            right: 10px;
-        }
-
-        .stars {
-            font-size: 24px;
-            color: #fdbc0d;
-        }
-
-        .star {
-            margin: 2px;
-        }
-    }
-
-}
-
-
-.carouselBTN {
-    border-radius: 50px;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    width: 3.5rem;
-    height: 3.5rem;
-    padding: 20px;
-    font-size: xx-large;
-    color: colors.$lightBlue;
+>.portfolio{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-
-footer {
-    margin-top: 100px;
-    height: 25vw;
-    width: 100%;
-    background-image: url(../img/Backgroud-slide.png);
-    list-style: none;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: colors.$greenLight;
 
-    li {
-        font-weight: 600;
-        font-size: 1.2em;
-        color: #83ffea;
-    }
-
-    .textFooter {
-        width: 82%;
-        margin: 100px auto;
-        margin-bottom: 30px;
+    >.heading {
+        margin-top: 100px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 5%;
+        text-align: center;
 
-    }
+        >h1 {
+            font-size: size.$headingXXL;
+            font-family: $primaryFont;
+            font-weight: 800;
+        }
 
-    .leftLogoSec {
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        justify-content: center;
-        gap: 30px;
-
-        h3 {
+        >p {
+            text-align: center;
+            font-size: size.$para;
+            width: 60%;
+            font-family: $primaryFont;
             font-weight: 700;
-            font-size: 1.6em;
+            color: colors.$lightBlue;
         }
-
-        p {
-            font-size: 1.2em;
-            font-weight: 600;
-            width: 82%;
-        }
-    }
-
-    .workFooter {
-        h4 {
-            font-size: 1.5em;
-            font-weight: 700;
-        }
-
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .servicesFooter {
-        h4 {
-            font-size: 1.5em;
-            font-weight: 700;
-        }
-
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .businessFooter {
-        h4 {
-            font-size: 1.5em;
-            font-weight: 700;
-        }
-
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .rightsec {
-        width: 82%;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .languageFooter {
-        label{
-           h4{
-            font-weight: 600;
-           }
-        }
-        select {
-            background: transparent;
-            border: none;
-        }
-    }
-
-    .bottomFooter {
-        width: 82%;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 1.3em;
-        font-weight: 600;
-
-        .bottomFooterRight {
-            color: colors.$black;
+        >.subNav{
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 20px;
-            font-weight: 700;
-            font-size: 0.688;
-
-            a {
-                color: colors.$black;
-                text-decoration: none;
+            margin-top: 50px;
+            list-style: none;
+            >li{
+                >a{
+                    font-size: x-large;
+                    text-decoration: none;
+                    color: colors.$lightBlue;
+                    padding: 15px;
+                    border-radius: 50px;
+                    transition: 0.4s ease;
+                    &:hover{
+                        border: 1px solid colors.$lightBlue;
+                        border-radius: 50px;
+                    }
+                }
             }
         }
     }
 
-    hr {
-        width: 82%;
-        color: colors.$black;
-        ;
-        margin: auto;
-        border-top: 3px solid colors.$white;
-    }
+    
 }
 
 
 
+
+
+
+
+
+
+
+}
